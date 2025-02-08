@@ -1,0 +1,134 @@
+#terminal-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px;
+	width: 100%;
+	height: 100%;
+}
+
+#terminal{
+	border-radius: 35px;
+	color: #FFF;
+	aspect-ratio: 1.2;
+	max-height: 50%;
+}
+
+#tittle_bar{
+	display: flex;
+	width: 100%;
+	height: 8%;
+	background: black;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+#trafic_ligth{
+	display: flex;
+	width: auto;
+	height: 80%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 16px;
+	gap: 0.8vw;
+}
+
+#btn_close{
+	border-radius: 100%;
+	aspect-ratio: 1;
+	height: 80%;
+	background: #FF5757;
+}
+
+#btn_maximaze{
+	border-radius: 100%;
+	aspect-ratio: 1;
+	height: 80%;
+	background: #FFB846;
+}
+
+#btn_minimize{
+	border-radius: 100%;
+	aspect-ratio: 1;
+	height: 80%;
+	background: #95FF44;
+}
+
+#terminal-content{
+	width: auto;
+	height: 75%;
+	background: rgba(39,36,51,0.7);
+	backdrop-filter: blur(10px);
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	padding: 10px;
+	font-size: clamp(1vw,30px,2vw);
+	filter: drop-shadow(0mm 4mm 4mm rgb(0, 0, 0));
+	min-height: 75px;
+}
+
+#terminal_tittle{
+	font-size: clamp(1.5vw,55px,2.8vw);
+	width: 23ch;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 2s steps(21) forwards;
+}
+
+#ref_social{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#ref_social a img{
+	aspect-ratio: 1;
+	width: 50%;
+	max-width: 100px;
+}
+
+#ref_social a {
+	width: 20%;
+}
+
+#my_github{
+	background: #24b35c;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#my_linkedin{
+	background: #000;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+@media (max-height: 200px) {
+	#ref_social{
+		display: none;
+	}
+}
+
+#photo{
+	margin: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#photo img{
+	max-height: 80vh;
+	max-width: 100%;
+	margin: auto;
+	border-radius: 20vw;
+	border: 5px solid white;
+}
+
+@keyframes typing{
+	from{
+		width: 0ch;
+	}
+}

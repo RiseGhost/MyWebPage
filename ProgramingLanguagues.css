@@ -1,0 +1,131 @@
+#ProgramingLanguages{
+	overflow: hidden;
+}
+
+#ProgramingWindow{
+	margin: auto;
+	width: 90%;
+	aspect-ratio: 16/9;
+	max-height: 90%;
+	background: rgba(39,36,51,0.7);
+	backdrop-filter: blur(8px);
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow-y: hidden;
+}
+
+#ProgramingWindow #TittleBar{
+	color:white;
+	background: black;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	display: flex;
+	position: relative;
+	justify-content: left;
+	align-items: center;
+	height: 8%;
+}
+
+#ProgramingWindow #TittleBar span{
+	position: absolute;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	font-size: 2.6vw;
+}
+
+#TraficLigthsWindow{
+	display: flex;
+	height: 80%;
+	margin-left: 20px;
+	align-items: center;
+	gap: 0.8vw;
+}
+
+#btn_close_window{
+	height: 65%;
+	aspect-ratio: 1;
+	border-radius: 100%;
+	background: #FF5757;
+}
+
+#btn_maximaze_window{
+	height: 65%;
+	aspect-ratio: 1;
+	border-radius: 100%;
+	background: #FFB846;
+}
+
+#btn_minimize_window{
+	height: 65%;
+	aspect-ratio: 1;
+	border-radius: 100%;
+	background: #95FF44;
+}
+
+#WindowContent{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	padding: 10px;
+	font-size: 1.8vw;
+	font-family: 'Ubuntu Mono';
+	width: 95%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#WindowContent .Comment{
+	color: darkgrey;
+}
+
+#WindowContent .EnumLanguages{
+	display: flex;
+	justify-content: space-between;
+}
+
+#WindowContent pre{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.BackgroundEffect{
+	position: absolute;
+	width: 20%;
+	aspect-ratio: 16/5;
+	background: #2fc262;
+	border-radius: 40px;
+	margin-left: -150%;
+	animation: 5s BackgrounAnimation infinite alternate;
+	z-index: 0;
+}
+
+.BackgroundEffect1{
+	position: absolute;
+	width: 10%;
+	aspect-ratio: 16/14;
+	background: #22972b;
+	border-radius: 40px;
+	margin-left: -150%;
+	animation: 11s BackgrounAnimation infinite alternate;
+	z-index: 0;
+}
+
+.BackgroundEffect2{
+	position: absolute;
+	width: 8%;
+	aspect-ratio: 16/14;
+	background: #22972b;
+	border-radius: 40px;
+	margin-left: -150%;
+	animation: 15s BackgrounAnimation infinite alternate;
+	z-index: 0;
+}
+
+@keyframes BackgrounAnimation {
+	to{
+		margin-left: 150%;
+	}
+}
